@@ -26,7 +26,7 @@ Button(root,text=" 9",command = lambda :get_variables(9)).grid(row=4,column=2, s
  
 #Adding other essential buttons to the Calculator
 Button(root, text = "AC", command = lambda: clear_all()).grid(row=5, column=0, sticky=N+S+E+W)
-Button(root, text = "0", command = lambda: clear_all()).grid(row=5, column=0, sticky=N+S+E+W)
+Button(root, text = "0", command = lambda: clear_all()).grid(row=5, column=1, sticky=N+S+E+W)
 Button(root,text= ".", command = lambda: get_variables(".")).grid(row=5, column=2, sticky=N+S+E+W)
  
  
