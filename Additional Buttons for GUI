@@ -1,0 +1,11 @@
+#Adding other essential buttons to the Calculator
+Button(root, text = "AC", command = lambda: clear_all()).grid(row=5, column=0, sticky=N+S+E+W)
+Button(root, text = "0", command = lambda: clear_all()).grid(row=5, column=0, sticky=N+S+E+W)
+Button(root,text= ".", command = lambda: get_variables(".")).grid(row=5, column=2, sticky=N+S+E+W)
+ 
+ 
+Button(root,text= "+", command = lambda:get_operation("+")).grid(row=2, column=3, sticky=N+S+E+W)
+Button(root,text= "-", command = lambda:get_operation("-")).grid(row=3, column=3, sticky=N+S+E+W)
+Button(root,text= "*", command = lambda:get_operation("*")).grid(row=4, column=3, sticky=N+S+E+W)
+Button(root,text= "/", command = lambda:get_operation("/")).grid(row=5, column=3, sticky=N+S+E+W)
+Button(root,text= "=", command = lambda:calculate()).grid(columnspan=6, sticky=N+S+E+W)
